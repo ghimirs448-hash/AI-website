@@ -5,76 +5,89 @@
     <!-- Information about the webpage -->
     <meta charset="UTF-8">
     <title>Introduction to Artificial Intelligence</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
 
-    <!-- Header contains the main title of the webpage -->
-    <header>
+    <!-- Header of the webpage -->
+    <header id="main-header">
         <h1>Introduction to Artificial Intelligence</h1>
         <p>Learning about AI and how it is changing our world.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html">AI Applications</a>
+        </nav>
     </header>
 
-    <!-- Main contains the primary content of the webpage -->
+    <!-- Main content -->
     <main>
 
-        <!-- This section introduces Artificial Intelligence -->
-        <section>
-            <h2>What is Artificial Intelligence?</h2>
+        <!-- Flexbox container -->
+        <div class="flex-container">
+
+            <!-- First section -->
+            <section id="about-ai" class="content-box">
+                <h2>What is Artificial Intelligence?</h2>
+
+                <p>
+                    Artificial Intelligence, commonly called AI, is a technology
+                    that allows computers and machines to perform tasks that
+                    normally require human intelligence. These tasks can include
+                    understanding language, recognizing images, solving problems,
+                    and making decisions.
+                </p>
+
+                <p>
+                    AI has become an important part of modern technology.
+                    Many people use AI every day without realizing it.
+                    Smartphones, search engines, recommendation systems, and
+                    digital assistants all use some form of artificial intelligence.
+                </p>
+            </section>
+
+            <!-- Second section -->
+            <section id="ai-benefits" class="content-box">
+                <h2>Benefits of Artificial Intelligence</h2>
+
+                <p>
+                    Artificial intelligence can help people complete tasks more
+                    quickly and efficiently. It can analyze large amounts of
+                    information, automate repetitive work, and help people make
+                    better decisions.
+                </p>
+
+                <p>
+                    AI is also being used in healthcare, education,
+                    transportation, business, and many other industries.
+                    As the technology improves, its role in everyday life
+                    will continue to grow.
+                </p>
+            </section>
+
+        </div>
+
+        <!-- Image section -->
+        <section class="image-section">
+            <h2>AI and Modern Technology</h2>
 
             <p>
-                Artificial Intelligence, commonly called AI, is a technology
-                that allows computers and machines to perform tasks that
-                normally require human intelligence. These tasks can include
-                understanding language, recognizing images, solving problems,
-                and making decisions.
+                Artificial intelligence connects many different areas of
+                technology and continues to change how people interact
+                with computers.
             </p>
 
-            <p>
-                AI has become an important part of modern technology.
-                Many people use AI every day without realizing it.
-                Smartphones, search engines, recommendation systems, and
-                digital assistants all use some form of artificial intelligence.
-            </p>
+            <!-- Keep your existing image path here if the filename is different -->
+            <img src="./images/ai.jpg" alt="Artificial Intelligence technology">
         </section>
-
-        <!-- This section displays an image about AI -->
-        <section>
-            <h2>Artificial Intelligence Technology</h2>
-
-            <img src="images/ai.jpg"
-                 alt="Artificial intelligence technology"
-                 width="500">
-        </section>
-
-        <!-- This section contains an unordered list -->
-        <section>
-            <h2>Common Types of AI Technology</h2>
-
-            <p>Some common technologies that use artificial intelligence include:</p>
-
-            <ul>
-                <li>Machine learning</li>
-                <li>Natural language processing</li>
-                <li>Computer vision</li>
-                <li>Robotics</li>
-                <li>Virtual assistants</li>
-            </ul>
-        </section>
-        <section>
-    <h2>Artificial Intelligence Technology</h2>
-
-    <img src="images/ai.jpg"
-         alt="Artificial intelligence technology"
-         width="500">
-</section>
 
     </main>
 
-    <!-- Footer contains the link to the second page -->
-    <footer>
-        <p>Continue learning about AI:</p>
-        <a href="page2.html">Read about AI in everyday life</a>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>Artificial Intelligence Educational Website</p>
+        <p>Created for Web Development Assignment</p>
     </footer>
 
 </body>
