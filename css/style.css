@@ -3,7 +3,7 @@ body {
     background-color: #f4f7fb;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #222;
+    color: #222222;
     margin: 0;
     padding: 0;
 }
@@ -44,12 +44,24 @@ nav {
 }
 
 nav a {
+    display: inline-block;
     margin: 0 10px;
     padding: 8px 15px;
     text-decoration: none;
     background-color: #1f4e79;
-    color: white;
+    color: #ffffff;
     border-radius: 5px;
+}
+
+/* Makes navigation easier to use with a keyboard */
+nav a:focus {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #163a5c;
 }
 
 /* Main content spacing */
@@ -66,7 +78,7 @@ main {
 
 /* Reusable class for content sections */
 .content-box {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     flex: 1;
@@ -93,7 +105,7 @@ main {
 /* Image section */
 .image-section {
     text-align: center;
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     margin-top: 20px;
 }
@@ -121,9 +133,94 @@ footer {
 /* Unique footer ID */
 #main-footer {
     background-color: #1f4e79;
-    color: white;
+    color: #ffffff;
 }
 
 #main-footer a {
-    color: white;
+    color: #ffffff;
+}
+
+/* Makes footer links visible when using a keyboard */
+#main-footer a:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   Responsive Design for Smaller Screens
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Make the main heading smaller */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Make section headings smaller */
+    h2 {
+        font-size: 22px;
+    }
+
+    /* Adjust paragraph size */
+    p {
+        font-size: 16px;
+    }
+
+    /* Reduce header spacing */
+    header {
+        padding: 20px 15px;
+    }
+
+    /* Stack navigation links vertically */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        width: 80%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    /* Reduce main content spacing */
+    main {
+        padding: 15px;
+    }
+
+    /* Change Flexbox from horizontal to vertical */
+    .flex-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Adjust content spacing */
+    .content-box {
+        padding: 15px;
+    }
+
+    .highlight-box {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .image-section {
+        padding: 15px;
+    }
+
+    /* Make images fit smaller screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust footer spacing */
+    footer {
+        padding: 15px;
+    }
 }
