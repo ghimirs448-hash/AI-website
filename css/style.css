@@ -1,226 +1,111 @@
-/* Basic styling for the entire website */
+
+/* Custom website styling */
+/* Bootstrap handles layout, buttons, and spacing */
+
+/* General page styling */
 body {
     background-color: #f4f7fb;
     font-family: Arial, sans-serif;
+    color: #222;
     font-size: 16px;
-    color: #222222;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
-/* Main heading */
-h1 {
-    text-align: center;
+/* Header styling */
+#main-header {
+    background-color: #dbeafe;
+    border-bottom: 4px solid #1f4e79;
+}
+
+#main-header h1 {
+    color: #17365d;
     font-size: 36px;
+    font-weight: bold;
+}
+
+#main-header p {
+    color: #34495e;
+}
+
+/* Custom content sections */
+.custom-section {
+    background-color: white;
+    border: 1px solid #d5e1ee;
+    border-radius: 10px;
 }
 
 /* Section headings */
 h2 {
     color: #1f4e79;
     font-size: 26px;
+    margin-bottom: 15px;
 }
 
-/* Paragraph styling */
-p {
-    line-height: 1.6;
-    font-size: 17px;
+h3 {
+    color: #245b88;
+    font-size: 22px;
 }
 
-/* Header styling */
-header {
-    background-color: #dbeafe;
-    text-align: center;
-    padding: 25px;
-}
-
-/* Unique header ID */
-#main-header {
-    border-bottom: 4px solid #1f4e79;
-}
-
-/* Navigation styling */
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 8px 15px;
-    text-decoration: none;
-    background-color: #1f4e79;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-/* Makes navigation easier to use with a keyboard */
-nav a:focus {
-    outline: 3px solid #000000;
-    outline-offset: 3px;
-}
-
-/* Navigation hover effect */
-nav a:hover {
-    background-color: #163a5c;
-}
-
-/* Main content spacing */
-main {
-    padding: 25px;
-}
-
-/* Flexbox layout */
-.flex-container {
-    display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
-}
-
-/* Reusable class for content sections */
-.content-box {
+/* Custom cards */
+.custom-card {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-}
-
-/* Another reusable class */
-.highlight-box {
-    background-color: #e8f1fb;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-/* Unique ID for the AI introduction section */
-#about-ai {
+    border: 1px solid #d5e1ee;
     border-left: 5px solid #1f4e79;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Unique ID for the benefits section */
-#ai-benefits {
-    border-left: 5px solid #4a7c59;
+/* Card hover effect */
+.custom-card:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.14);
 }
 
-/* Image section */
-.image-section {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Image styling */
-img {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* General link styling */
+/* Links */
 a {
-    color: #0056b3;
+    text-decoration: none;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+a:not(.btn) {
+    color: #155a96;
 }
 
-/* Unique footer ID */
-#main-footer {
-    background-color: #1f4e79;
-    color: #ffffff;
+a:not(.btn):hover {
+    text-decoration: underline;
 }
 
-#main-footer a {
-    color: #ffffff;
-}
-
-/* Makes footer links visible when using a keyboard */
-#main-footer a:focus {
-    outline: 3px solid #ffffff;
+/* Accessible keyboard focus */
+a:focus-visible {
+    outline: 3px solid #d97706;
     outline-offset: 3px;
 }
 
+/* Custom list styling */
+.custom-section ul {
+    padding-left: 25px;
+}
 
-/* =========================================
-   Responsive Design for Smaller Screens
-   ========================================= */
+.custom-section li {
+    margin-bottom: 8px;
+}
 
-@media (max-width: 768px) {
+/* Footer */
+footer {
+    background-color: #dbeafe;
+    color: #17365d;
+    border-top: 2px solid #1f4e79;
+}
 
-    /* Make the main heading smaller */
-    h1 {
+/* Responsive custom font adjustments */
+@media (max-width: 600px) {
+    #main-header h1 {
         font-size: 28px;
     }
 
-    /* Make section headings smaller */
     h2 {
-        font-size: 22px;
+        font-size: 23px;
     }
 
-    /* Adjust paragraph size */
-    p {
-        font-size: 16px;
-    }
-
-    /* Reduce header spacing */
-    header {
-        padding: 20px 15px;
-    }
-
-    /* Stack navigation links vertically */
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav a {
-        margin: 0;
-        width: 80%;
-        max-width: 300px;
-        box-sizing: border-box;
-    }
-
-    /* Reduce main content spacing */
-    main {
-        padding: 15px;
-    }
-
-    /* Change Flexbox from horizontal to vertical */
-    .flex-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* Adjust content spacing */
-    .content-box {
-        padding: 15px;
-    }
-
-    .highlight-box {
-        padding: 15px;
-        margin: 15px 0;
-    }
-
-    .image-section {
-        padding: 15px;
-    }
-
-    /* Make images fit smaller screens */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Adjust footer spacing */
-    footer {
-        padding: 15px;
+    h3 {
+        font-size: 20px;
     }
 }
