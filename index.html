@@ -1,118 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Information about the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the basics of computer science and programming.">
+    <title>Computer Science Education - Home</title>
 
-    <title>Introduction to Artificial Intelligence</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header of the webpage -->
-    <header id="main-header">
-
-        <h1>Introduction to Artificial Intelligence</h1>
-
-        <p>
-            Learning about AI and how it is changing our world.
-        </p>
-
-        <!-- Main navigation -->
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="page2.html">Explore AI Applications</a>
-        </nav>
-
+    <!-- Header -->
+    <header id="main-header" class="text-center p-4">
+        <h1>Computer Science Education</h1>
+        <p class="lead">Explore the World of Technology</p>
     </header>
 
+    <!-- Navigation -->
+    <nav class="container text-center my-3" aria-label="Main navigation">
+        <a href="index.html" class="btn btn-primary m-2" aria-current="page">Home</a>
+        <a href="page2.html" class="btn btn-outline-primary m-2">Learn More</a>
+    </nav>
 
-    <!-- Main content -->
-    <main>
+    <!-- Main Content -->
+    <main class="container my-4">
 
-        <!-- Flexbox container -->
-        <div class="flex-container">
-
-            <!-- First section -->
-            <section id="about-ai" class="content-box">
-
-                <h2>What is Artificial Intelligence?</h2>
-
-                <p>
-                    Artificial Intelligence, commonly called AI, is a technology
-                    that allows computers and machines to perform tasks that
-                    normally require human intelligence. These tasks can include
-                    understanding language, recognizing images, solving problems,
-                    and making decisions.
-                </p>
-
-                <p>
-                    AI has become an important part of modern technology.
-                    Many people use AI every day without realizing it.
-                    Smartphones, search engines, recommendation systems, and
-                    digital assistants all use some form of artificial intelligence.
-                </p>
-
-            </section>
-
-
-            <!-- Second section -->
-            <section id="ai-benefits" class="content-box">
-
-                <h2>Benefits of Artificial Intelligence</h2>
-
-                <p>
-                    Artificial intelligence can help people complete tasks more
-                    quickly and efficiently. It can analyze large amounts of
-                    information, automate repetitive work, and help people make
-                    better decisions.
-                </p>
-
-                <p>
-                    AI is also being used in healthcare, education,
-                    transportation, business, and many other industries.
-                    As the technology improves, its role in everyday life
-                    will continue to grow.
-                </p>
-
-            </section>
-
-        </div>
-
-
-        <!-- Image section -->
-        <section class="image-section">
-
-            <h2>AI and Modern Technology</h2>
-
+        <section class="custom-section p-4 mb-4">
+            <h2 class="text-center">What is Computer Science?</h2>
             <p>
-                Artificial intelligence connects many different areas of
-                technology and continues to change how people interact
-                with computers.
+                Computer Science is the study of computers,
+                programming, and technology. It helps us
+                understand how software and computer systems
+                work in everyday life.
+            </p>
+            <p>
+                Computer Science is important because it
+                allows people to develop websites, mobile
+                applications, artificial intelligence,
+                and many other technologies.
+            </p>
+        </section>
+
+        <!-- Bootstrap Grid -->
+        <section class="row g-4 mb-4" aria-label="Computer science topics">
+
+            <div class="col-md-6">
+                <article class="custom-card p-4 h-100">
+                    <h2>Programming</h2>
+                    <p>
+                        Programming is the process of writing
+                        instructions that computers follow.
+                        Popular programming languages include
+                        Java, Python, and JavaScript.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-md-6">
+                <article class="custom-card p-4 h-100">
+                    <h2>Web Development</h2>
+                    <p>
+                        Web development involves creating
+                        websites using HTML, CSS, and
+                        JavaScript. These technologies
+                        help developers create interactive
+                        and responsive websites.
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="custom-section p-4 mb-4">
+            <h2>Why Study Computer Science?</h2>
+            <p>
+                Studying computer science helps students
+                develop problem-solving, logical thinking,
+                and technical skills. These skills are
+                useful in many different careers.
             </p>
 
-            <img
-                src="./images/ai.jpg"
-                alt="Illustration representing artificial intelligence and modern digital technology">
+            <ul>
+                <li>Learn programming skills</li>
+                <li>Develop websites and applications</li>
+                <li>Understand modern technology</li>
+                <li>Explore different career opportunities</li>
+            </ul>
 
+            <a href="page2.html" class="btn btn-success mt-3">
+                Explore More Topics
+            </a>
         </section>
 
     </main>
 
-
     <!-- Footer -->
-    <footer id="main-footer">
-
-        <p>Artificial Intelligence Educational Website</p>
-
-        <p>Created for Web Development Assignment</p>
-
+    <footer class="text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 Computer Science Education
+        </p>
     </footer>
 
 </body>
-
 </html>

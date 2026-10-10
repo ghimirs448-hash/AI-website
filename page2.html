@@ -1,127 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Information about the webpage -->
     <meta charset="UTF-8">
-
-    <!-- Makes the webpage responsive on phones and smaller screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore programming, web development, and computer science careers.">
+    <title>Computer Science Education - Learn More</title>
 
-    <title>Applications of Artificial Intelligence</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header id="main-header">
-
-        <h1>Applications of Artificial Intelligence</h1>
-
-        <p>
-            Exploring how AI is used in the real world.
-        </p>
-
-        <!-- Main navigation -->
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="page2.html">AI Applications</a>
-        </nav>
-
+    <header id="main-header" class="text-center p-4">
+        <h1>Explore Computer Science</h1>
+        <p class="lead">Learn About Technology and Careers</p>
     </header>
 
+    <!-- Navigation -->
+    <nav class="container text-center my-3" aria-label="Main navigation">
+        <a href="index.html" class="btn btn-outline-primary m-2">Home</a>
+        <a href="page2.html" class="btn btn-primary m-2" aria-current="page">Learn More</a>
+    </nav>
 
-    <!-- Main content -->
-    <main>
+    <main class="container my-4">
 
-        <!-- Flexbox container -->
-        <div class="flex-container">
-
-            <!-- Healthcare section -->
-            <section class="content-box">
-
-                <h2>AI in Healthcare</h2>
-
-                <p>
-                    Artificial intelligence is being used in healthcare to
-                    analyze medical information and assist doctors. AI systems
-                    can help identify patterns in medical images and patient data.
-                </p>
-
-                <p>
-                    These technologies can support healthcare professionals
-                    when diagnosing illnesses and planning treatments.
-                </p>
-
-            </section>
-
-
-            <!-- Transportation section -->
-            <section class="content-box">
-
-                <h2>AI in Transportation</h2>
-
-                <p>
-                    AI is an important technology in modern transportation.
-                    Self-driving vehicles use cameras, sensors, and artificial
-                    intelligence to understand their surroundings.
-                </p>
-
-                <p>
-                    AI can also help manage traffic, plan routes, and improve
-                    transportation safety.
-                </p>
-
-            </section>
-
-        </div>
-
-
-        <!-- Education section -->
-        <section class="highlight-box">
-
-            <h2>AI in Education</h2>
-
+        <section class="custom-section p-4 mb-4">
+            <h2 class="text-center">Popular Programming Languages</h2>
             <p>
-                Artificial intelligence can provide students with personalized
-                learning tools. It can help explain difficult concepts, provide
-                feedback, and recommend learning materials based on a student's
-                needs.
+                Different programming languages are used
+                for different purposes. Learning these
+                languages can help students become
+                better software developers.
             </p>
+        </section>
+
+        <!-- Bootstrap Responsive Grid -->
+        <section class="row g-4 mb-4" aria-label="Programming languages">
+
+            <div class="col-md-4">
+                <article class="custom-card p-4 h-100">
+                    <h3>Java</h3>
+                    <p>
+                        Java is commonly used to develop
+                        enterprise software, Android
+                        applications, and backend systems.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="custom-card p-4 h-100">
+                    <h3>Python</h3>
+                    <p>
+                        Python is popular for artificial
+                        intelligence, data analysis,
+                        automation, and web development.
+                    </p>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="custom-card p-4 h-100">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript is widely used to
+                        create interactive websites
+                        and modern web applications.
+                    </p>
+                </article>
+            </div>
 
         </section>
 
-
-        <!-- Future of AI section -->
-        <section class="highlight-box">
-
-            <h2>The Future of AI</h2>
-
+        <section class="custom-section p-4 mb-4">
+            <h2>Career Opportunities</h2>
             <p>
-                Artificial intelligence will likely continue to influence how
-                people work, learn, communicate, and travel. Understanding both
-                its benefits and challenges is important as AI becomes more
-                common in society.
+                Computer science offers many career
+                opportunities in the technology industry.
+                Some common careers include:
             </p>
 
+            <ul class="list-group mb-3">
+                <li class="list-group-item">Software Developer</li>
+                <li class="list-group-item">Web Developer</li>
+                <li class="list-group-item">Cybersecurity Analyst</li>
+                <li class="list-group-item">Database Administrator</li>
+                <li class="list-group-item">Data Scientist</li>
+            </ul>
+        </section>
+
+        <section class="custom-section p-4 mb-4">
+            <h2>Learn More Online</h2>
+            <p>
+                Students can explore additional programming
+                tutorials and educational resources online.
+            </p>
+
+            <a href="https://www.w3schools.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-success m-2">
+                W3Schools
+            </a>
+
+            <a href="https://developer.mozilla.org/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline-primary m-2">
+                MDN Web Docs
+            </a>
         </section>
 
     </main>
 
-
-    <!-- Footer -->
-    <footer id="main-footer">
-
-        <p>Artificial Intelligence Educational Website</p>
-
-        <p>
-            <a href="index.html">Return to Artificial Intelligence Home Page</a>
+    <footer class="text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 Computer Science Education
         </p>
-
     </footer>
 
 </body>
-
 </html>
