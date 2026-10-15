@@ -13,6 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js" defer></script>
 
 <body>
 
@@ -27,6 +28,16 @@
         <a href="index.html" class="btn btn-primary m-2" aria-current="page">Home</a>
         <a href="page2.html" class="btn btn-outline-primary m-2">Learn More</a>
     </nav>
+
+    <section class="custom-section p-4 mb-4">
+    <h2>Discover a Computer Science Fact</h2>
+    <p id="fact-text" aria-live="polite" aria-atomic="true">
+        Click the button to learn something new!
+    </p>
+    <button type="button" id="fact-button" class="btn btn-primary">
+        Show a Fact
+    </button>
+</section>
 
     <!-- Main Content -->
     <main class="container my-4">

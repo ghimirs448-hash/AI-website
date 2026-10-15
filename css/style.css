@@ -109,3 +109,35 @@ footer {
         font-size: 20px;
     }
 }
+/* Expandable programming examples */
+.code-example {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #d5e1ee;
+}
+
+.code-example summary {
+    color: #17365d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.code-example[open] summary {
+    margin-bottom: 12px;
+}
+
+.code-example pre {
+    background-color: #eef3f9;
+    color: #17365d;
+    padding: 12px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Keyboard focus for the new controls */
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #d97706;
+    outline-offset: 3px;
+}
